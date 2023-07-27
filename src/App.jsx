@@ -18,7 +18,7 @@ function App() {
         <div className="main-wrapper">
           <div className="header"></div>
           <div className="info">
-            <h1>IP Address Tracker</h1>
+            <p>IP Address Tracker</p>
             <SearchBar />
             <IpDetail />
           </div>

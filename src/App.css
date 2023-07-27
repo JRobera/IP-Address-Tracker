@@ -23,15 +23,15 @@
   flex-flow: column;
   gap: 25px;
   text-align: center;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -70%);
   width: 80%;
   align-items: center;
   z-index: 10;
 }
 
-.info > h1 {
+.info > p {
   color: white;
-  font-size: large;
+  font-size: xx-large;
 }
 
 @media (max-width: 740px) {
