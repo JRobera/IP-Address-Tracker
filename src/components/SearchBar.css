@@ -1,0 +1,40 @@
+form {
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+  width: 50%;
+}
+
+form input {
+  flex: 1;
+  background-color: white;
+  padding: 10px 15px;
+}
+
+form button {
+  background-color: hsl(0, 0%, 17%);
+  color: white;
+  padding: 10px;
+}
+
+form input,
+form button {
+  border: none;
+  outline: none;
+}
+form input:hover,
+form button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 704px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  form {
+    width: 100%;
+  }
+}
