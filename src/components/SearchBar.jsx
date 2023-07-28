@@ -17,7 +17,8 @@ function SearchBar() {
     const apiKey = import.meta.env.VITE_API_KEY;
     axios
       .get(
-        `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${IpAddress}`
+        `https://geo.ipify.org/api/v2/country,city?apiKey=at_WW7iwIV6XVTmQ1DdmOG6IDhPqZBvd&ipAddress=8.8.8.8`
+        // `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${IpAddress}`
       )
       .then((response) => {
         setIpInfo(response.data);
