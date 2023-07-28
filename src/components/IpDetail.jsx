@@ -13,16 +13,20 @@ function IpDetail() {
       <div className="location">
         <span>LOCATION</span>
         <p>
-          {IpInfo?.location?.city +
-            ", " +
-            IpInfo?.location?.country +
-            " " +
-            IpInfo?.location?.geonameId}
+          {IpInfo?.location?.city
+            ? IpInfo?.location?.city
+            : "" + ", " + IpInfo?.location?.country
+            ? IpInfo?.location?.country
+            : "" + " " + IpInfo?.location?.geonameId
+            ? IpInfo?.location?.geonameId
+            : ""}
         </p>
       </div>
       <div className="timezone">
         <span>TIMEZONE</span>
-        <p>UTC {IpInfo?.location?.timezone}</p>
+        <p>
+          {IpInfo?.location?.timezone ? "UTC" + IpInfo?.location?.timezone : ""}
+        </p>
       </div>
       <div className="isp">
         <span>ISP</span>

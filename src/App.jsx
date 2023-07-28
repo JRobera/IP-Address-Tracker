@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
 import SearchBar from "./components/SearchBar";
 import IpDetail from "./components/IpDetail";
 import Map from "./components/Map";

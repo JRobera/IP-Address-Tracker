@@ -28,7 +28,7 @@ function SearchBar() {
         setIpAddress("");
       })
       .catch((error) => {
-        console.log(error);
+        alert(error);
       });
   }
   return (
